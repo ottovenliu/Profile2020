@@ -1,0 +1,244 @@
+/*=============================================
+=                  General                    =
+=============================================*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+button:focus {
+    outline: none;
+}
+
+.carousel-indicators li {
+    border-radius: 50%;
+}
+ 
+.carousel-item>img {
+    height: 100vh;
+  }
+
+/*=============================================
+=                  Navbar                     =
+=============================================*/
+
+.navbar {
+    box-shadow: 0 3px 18px rgba(0, 0, 0, .11);
+}
+
+/*=============================================
+=                  Header                     =
+=============================================*/
+/* 加入背景圖片 */
+#header {
+    border-radius: 0px;
+    margin-bottom: 0px;
+    background-image: url('../img/header-image.jpg');
+    background-size: cover;
+    /* 固定背景 */
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 0px 0px;
+    position: relative;
+    /* viewport height */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* 以垂直向為flex的排列軸 */
+    flex-direction: column;
+}
+
+#header .container {
+    position: relative;
+    z-index: 2;
+}
+
+#header:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: .3;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    transition: all .3s ease;
+}
+
+#header:hover:after {
+    opacity: .7;
+}
+
+/*=============================================
+=                  Intro                      =
+=============================================*/
+.intro-box {
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 15px 15px;
+    text-align: center;
+}
+
+.intro-box:hover {
+    box-shadow: 0px 22px 22px rgba(0,0,0,.25);
+}
+
+
+
+
+
+
+
+/*=============================================
+=                  Features                   =
+=============================================*/
+
+/*=============================================
+=                  Reviews                    =
+=============================================*/
+.carousel .carousel-item {
+    width: 100vh;
+
+  }
+  
+  .carousel .carousel-item {
+    width: 100vh;
+    object-fit: cover;
+   
+  }
+
+
+
+/*=============================================
+=                  Start Now                  =
+=============================================*/
+/*=============================================
+=                  Gallery                    =
+=============================================*/
+
+/* TODO: 設定Hover特效 */
+/* 
+   屬性選擇器 []
+   選id開頭是galleryImage
+*/
+[id^='product'] {
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    filter: grayscale(100%);
+    transition: all .5s ease;
+}
+
+
+[id^='product']:hover {
+    filter: grayscale(0%);
+}
+
+[id^='galleryImage']>.product-text {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 8px 10px rgba(0, 0, 0, .5);
+    text-align: center;
+    transition: all .3s ease;
+    font-size: 6px;
+    opacity: 0;
+}
+
+
+
+
+/* 放入背景圖片 */
+
+#product1 {
+    background-image: url('../img/S__12247052.jpg');
+}
+
+#product2 {
+    background-image: url('../img/S__12247054.jpg');
+}
+
+#product3 {
+    background-image: url('../img/S__12247051.jpg');
+}
+
+#product4 {
+    background-image: url('../img/S__12247055.jpg');
+}
+
+#product5 {
+    background-image: url('../img/ACT\ \(3\).jpg');
+}
+
+#product6 {
+    background-image: url('../img/S__12247052.jpg');
+}
+
+#product7 {
+    background-image: url('../img/S__12247052.jpg');
+}
+
+#product8 {
+    background-image: url('../img/S__12247055.jpg');
+
+
+
+
+}
+
+
+/*=============================================
+=                   Footer                    =
+=============================================*/
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-end p {
+    font-size: 8px;
+    margin: 0;
+}
+
+#goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
+.ad-box{
+    width: 300px;
+    position: fixed;
+    right: 0px;
+    bottom: 80px;
+    z-index: 100;
+    border:1px solid #dddddd;
+    background: #ffffff;
+
+    position: fixed;
+    bottom: 80px;
+    right: 0px;
+    z-index: 100;
+    background: #ffffff;
+    display: flex;
+
+
+}
+.left-part{
+    display: flex;
+    flex-direction: column;  
+}

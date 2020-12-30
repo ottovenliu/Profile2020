@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>期末做一夜</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <!-- 客製化Bootstrap CSS -->
+    <link rel="stylesheet" href="./scss/bootstrap.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- 使用style.css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- 連結Bootstrap所需要的js -->
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</head>
+
+<!-- navbar -->
+<!-- 使用Boostrap Navbar -->
+<!-- 設定Navbar緊貼畫面上緣 -->
+<!-- TODO: 點擊滾動目標 -->
+<nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">咖啡這件小事</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#introSection">Coffee</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- navbar end -->
+<!-- header -->
+<header id="header" class="jumbotron text-center text-white bg-dark">
+    <div class="container">
+        <h1>咖啡剛入口,就此誤一生</h1>
+        <p>我要你知道，在這個世界上總有一個人是等著你的，不管在什麼時候，不管在什麼地方，反正你知道，總有這麼個人。</p>
+    </div>
+</header>
+<!-- header end -->
+
+<!-- introSection -->
+<!-- 設定introSection 上下padding為5倍 -->
+<section id="introSection" class="py-5">
+    <h1 class="section-title text-center text-secondary mb-5">Coffee</h1>
+    <div class="container">
+        <!-- 修正排版為三項排一排 並置中文字-->
+        <div class="row">
+            <div class="col-md-4">
+                <div id="product1" class="intro-box">
+                    <h3 class="text-white">Coffee-1</h3>
+                    <p class="text-white ">Milk,Arabica,Sugar</p>
+                    <p class="text-white ">NT 110</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="product2" class="intro-box">
+                    <h3 class="text-white">Coffee-2</h3>
+                    <p class="text-white ">Milk,Arabica,Sugar</p>
+                    <p class="text-white ">NT 110</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="product3" class="intro-box">
+                    <h3 class="text-white">Coffee-3</h3>
+                    <p class="text-white ">Milk,Arabica,Sugar</p>
+                    <p class="text-white ">NT 110</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="product4" class="intro-box">
+                    <h3 class="text-white">Coffee-4</h3>
+                    <p class="text-white ">Milk,Arabica,Sugar</p>
+                    <p class="text-white ">NT 110</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div id="product5" class="intro-box">
+                    <h3 class="text-white">Coffee-5</h3>
+                    <p class="text-white ">Milk,Arabica,Sugar</p>
+                    <p class="text-white ">NT 110</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- introSection end -->
+
+<!-- reviewsSection -->
+<section id="reviewsSection" class="py-5">
+    <!-- 使用輪播(Carousel)元件放入以下兩頁內容 -->
+    <!-- 輪播 -->
+    <div id="carouselId" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselId" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselId" data-slide-to="1"></li>
+            <li data-target="#carouselId" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <!-- 第一頁 內容 -->
+                <div class="row justify-content-center py-5">
+                    <div class="col-sm-2 col-6">
+                        <img src="./img/ACT (1).jpg" alt="">
+                    </div>
+                </div>
+                <!-- 第一頁 內容 結束 -->
+            </div>
+            <div class="carousel-item">
+                <!-- 第二頁 內容 -->
+                <div class="row justify-content-center py-5">
+                    <div class="col-sm-2 col-6">
+                        <img src="./img/ACT (2).jpg" alt="">
+                    </div>
+                </div>
+                <!-- 第二頁 內容 結束 -->
+            </div>
+            <div class="carousel-item">
+                <!-- 第二頁 內容 -->
+                <div class="row justify-content-center py-5">
+                    <div class="col-sm-2 col-6">
+                        <img src="./img/ACT (4).jpg" alt="">
+                    </div>
+                </div>
+                <!-- 第二頁 內容 結束 -->
+            </div>
+
+
+
+
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+        <!-- 輪播 end -->
+</section>
+<!-- reviewsSection end -->
+
+
+<!-- Google 地圖 -->
+<iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3616.310829424968!2d121.54716031484091!3d24.989551983993138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442ab63d0e3f2ab%3A0x42387c033d240fa3!2z5ZKW5ZWh6YCZ5Lu25bCP5LqLQ29mZmVlIExpdHRsZSBUaGluZ3M!5e0!3m2!1szh-TW!2stw!4v1590004313996!5m2!1szh-TW!2stw"
+    width="100%" height="450" class="d-block" frameborder="0" style="border:0;" allowfullscreen=""
+    aria-hidden="false"></iframe>
+<!-- footer -->
+
+<!-- footer -->
+<footer id="footer" class="pt-5 bg-secondary text-white">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 footer-list">
+                <h4>Contact Us</h4>
+                <a href="otto.ven.liu@gmail.com">otto.ven.liu@gmail.com</a>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-list">
+                <h5 class="text-uppercase">Company</h5>
+                <ul>
+                    <li>
+                        <a href="#">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Press</a>
+                    </li>
+                    <li>
+                        <a href="#">Bonus</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-list">
+                <h5 class="text-uppercase">Product</h5>
+                <ul>
+                    <li>
+                        <a href="#">Enterprice</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Security</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-sm-6 footer-list">
+                <h5 class="text-uppercase">Resource</h5>
+                <ul>
+                    <li>
+                        <a href="#">Guilde</a>
+                    </li>
+                    <li>
+                        <a href="#">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#">API</a>
+                    </li>
+                    <li>
+                        <a href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-end bg-dark mt-5 py-2">
+        <p class="text-center">&copy; Copy right 2020</p>
+    </div>
+</footer>
+
+</body>
