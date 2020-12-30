@@ -1,0 +1,47 @@
+
+import requests
+from pyquery import PyQuery as pq
+import numpy as np
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.113 Safari/537.36'
+}
+
+# 網頁定位
+Url = input("YT Slade")
+html = pq(Url, encoding="utf-8", headers=headers)
+Topx = int(input("Top:"))+0
+doc = pq(Url)
+dateList = []
+# 資料採集
+for i in range(Topx):
+    i += 4
+    Rank = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(1)".format(i)).text()
+    Garde = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(2) > span".format(i)).text()
+    Username = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(3) > a".format(i)).text()
+    Category = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(3) > sup > i".format(i)).text()
+    Uploads = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(4) > span".format(i)).text()
+    Subs = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(5)".format(i)).text()
+    Videoviews = doc(
+        "body > div:nth-child(11) > div:nth-child(2) > div:nth-child({}) > div:nth-child(6) > span".format(i)).text()
+
+    dateDict = {}
+    dateDict["Rank"] = Rank
+    dateDict["Garde"] = Garde
+    dateDict["Username"] = Username
+    dateDict["Category"] = Category
+    dateDict["Uploads"] = Uploads
+    dateDict["Subs"] = Subs
+    dateDict["Videoviews"] = Videoviews
+
+    dateList.append(dateDict)
+w = np.array(dateList)
+
+# 資料檢驗
+
+print(w)
